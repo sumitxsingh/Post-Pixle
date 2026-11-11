@@ -1,2 +1,26 @@
 /* prettier-ignore */
+html[data-theme=dark] {
+  color-scheme: dark;
+}
+html[data-theme=dark] body {
+  background: #121212;
+  color: #cfd8dc;
+}
+html[data-theme=dark] h1, html[data-theme=dark] h2, html[data-theme=dark] h3, html[data-theme=dark] h4, html[data-theme=dark] h5, html[data-theme=dark] h6 {
+  color: #f1f1f1;
+}
+html[data-theme=dark] .bg-white, html[data-theme=dark] .navbar {
+  background-color: #121212 !important;
+}
+html[data-theme=dark] .navbar .nav-link, html[data-theme=dark] .navbar-brand {
+  color: #e6e6e6 !important;
+}
+html[data-theme=dark] .nav-text-outlined, html[data-theme=dark] .text-outlined {
+  -webkit-text-stroke-color: #fff;
+}
+html[data-theme=dark] .form-control {
+  background: #1e1e1e;
+  color: #eee;
+  border-color: #444;
+}
 /*# sourceMappingURL=user-rtl.css.map */

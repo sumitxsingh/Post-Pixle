@@ -10,7 +10,7 @@
     <!-- ===============================================-->
     <!--    Document Title-->
     <!-- ===============================================-->
-    <title>Portfolio | Selected Works</title>
+    <title>Blog | Recent update</title>
 
 
     <!-- ===============================================-->
@@ -34,6 +34,14 @@
     <link href="assets/css/theme.css" rel="stylesheet" />
     <link href="assets/css/user.css" rel="stylesheet" />
 
+    <script>
+      try {
+        var t = localStorage.getItem('theme') ||
+          (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    </script>
+
   </head>
 
 
@@ -50,8 +58,8 @@
             <div class="col-8">
               <div class="d-inline-block"><a class="navbar-brand pt-0 fs-3 text-black d-flex align-items-center" href="index.html"><img class="img-fluid" src="assets/img/icons/logo-icon.png" alt="" /><span class="fw-bolder ms-2">Post</span><span class="fw-thin">Pixle</span></a></div>
               <div class="mt-4 d-none d-lg-block">
-                <h1 class="text-uppercase fs-lg-7 fs-5 fw-bolder text-300 lh-1 position-relative z-index-0">Portfolio</h1>
-                <h1 class="d-none d-md-block fw-bolder text-outlined fs-7 text-white lh-1 mt-n4 position-relative z-index--1">Selected Works</h1>
+                <h1 class="text-uppercase fs-lg-7 fs-5 fw-bolder text-300 lh-1 position-relative z-index-0">Blog</h1>
+                <h1 class="d-none d-md-block fw-bolder text-outlined fs-7 text-white lh-1 mt-n4 position-relative z-index--1">Recent update</h1>
               </div>
             </div>
             <div class="col-4 d-lg-none text-end pe-0">
@@ -66,11 +74,11 @@
                 <div class="d-lg-flex flex-center-start gap-3 overflow-hidden">
                   <ul class="navbar-nav ms-auto fs-4 ps-6">
                     <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5 active" aria-current="page" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="portfolio.html">Portfolio</a></li>
                     <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="gallery.html">Gallery</a></li>
                     <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="exhibitions.html">Exhibitions</a></li>
                     <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5 active" aria-current="page" href="blog.html">Blog</a></li>
                   </ul>
                 </div>
               </div>
@@ -78,24 +86,27 @@
             <div class="col-4">
               <div class="d-none d-lg-flex justify-content-end position-relative z-index-1">
                 <div class="position-absolute absolute-centered z-index--1">
-                  <h1 class="ms-2 fw-bolder text-outlined text-uppercase text-white pe-none display-1">Portfolio</h1>
+                  <h1 class="ms-2 fw-bolder text-outlined text-uppercase text-white pe-none display-1">Blog</h1>
                 </div>
                 <div class="d-flex gap-3 align-items-start"><a class="mb-0 ms-auto text-warning fs-0 fw-bold text-uppercase" href="blog.html#contact">Contact Now</a>
+                  <button id="themeToggle" class="btn btn-link p-0 text-warning" type="button" aria-label="Switch to dark mode">
+                    <span class="fas fa-moon"></span>
+                  </button>
                   <ul class="navbar-nav navbar-postpixle ms-auto text-end">
                     <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="index.html">Home</a></li>
-                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0 active" aria-current="page" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="portfolio.html">Portfolio</a></li>
                     <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="gallery.html">Gallery</a></li>
                     <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="exhibitions.html">Exhibitions</a></li>
                     <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="about.html">About</a></li>
-                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="blog.html">Blog</a></li>
+                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0 active" aria-current="page" href="blog.html">Blog</a></li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
           <div class="row g-0 mt-4 d-lg-none">
-            <h1 class="text-uppercase ps-0 fs-lg-7 fs-5 fw-bolder text-300 lh-1 position-relative z-index-0">Portfolio</h1>
-            <h1 class="fw-bolder text-outlined ps-0 fs-lg-7 fs-sm-6 fs-5 text-white lh-1 mt-sm-n4 mt-n3 position-relative z-index--1">Selected Works</h1>
+            <h1 class="text-uppercase ps-0 fs-lg-7 fs-5 fw-bolder text-300 lh-1 position-relative z-index-0">Blog</h1>
+            <h1 class="fw-bolder text-outlined ps-0 fs-lg-7 fs-sm-6 fs-5 text-white lh-1 mt-sm-n4 mt-n3 position-relative z-index--1">Recent update</h1>
           </div>
         </div>
       </nav>
@@ -103,76 +114,132 @@
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section class="py-3">
+      <section class="py-2">
 
-        <div class="container-fluid px-0">
-          <div class="position-absolute w-100 border-dashed-bottom opacity-25 top-5 z-index-1"></div>
-          <div class="container px-md-5">
-            <div class="row g-0">
-              <div class="col-lg-12 pb-6 px-0 mb-lg-0">
-                <div class="swiper swiper-theme" data-swiper='{"slidesPerView":1,"breakpoints":{"576":{"slidesPerView":1.2}},"spaceBetween":30,"grabCursor":true,"pagination":{"el":".swiper-pagination","clickable":true},"loop":true,"slideToClickedSlide":true}'>
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="row align-items-center">
-                        <div class="col-xl-7">
-                          <div class="position-relative">
-                            <div class="position-absolute start-0 bottom-0 ms-3">
-                              <h3 class="text-white">Mogadisu Somalia</h3>
-                              <p class="text-300">Shooting and Advertisement Campaign</p>
-                            </div><img class="portfolio-img img-fluid" src="assets/img/portfolio/img01.png" alt="" />
-                          </div>
-                        </div>
-                        <div class="col-xl-4 mt-4">
-                          <ul class="fs-0" style="text-align: justify;">
-                            <li>Golden Hour Portraits</li>
-                            <li>Portrait Session · Outdoor</li>
-                            <li>A collection capturing natural light at its most flattering — soft shadows, warm tones, and genuine expressions.</li>
-                          </ul>
-                        </div>
+        <div class="container px-md-5">
+          <div class="row g-4">
+            <div class="col-lg-4 col-md-6 d-flex">
+              <div class="card border-0 mb-3"><img class="card-img-top" src="assets/img/blogs/img1.png" alt="" />
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center"> <span class="fa-solid fa-circle-dot text-warning"></span>
+                    <p class="text-300 m-0 ps-1">6min read</p>
+                  </div>
+                  <div class="bg-warning p-2 text-center opacity-50">
+                    <p class="text-white mb-0">color and light</p>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <h5 class="mb-3">5 Tips for Better Natural Light Photography</h5>
+                  <p class="text-200 m-0 mb-3">By - <span class="text-300 fw-bold">By Sumit Singh</span></p>
+                  <p class="mb-3">Natural light can make or break a shot. Here's how to use it to your advantage, no matter the time of day.</p>
+                  <button class="btn btn-link text-warning p-0"><span class="fw-medium">Read full article</span><img class="ms-3" src="assets/img/icons/long-arrow.png" alt="" /></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex">
+              <div class="card border-0 mb-3"><img class="card-img-top" src="assets/img/blogs/img2.png" alt="" />
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center"> <span class="fa-solid fa-circle-dot text-warning"></span>
+                    <p class="text-300 m-0 ps-1">6min read</p>
+                  </div>
+                  <div class="bg-warning p-2 text-center opacity-50">
+                    <p class="text-white mb-0">color and light</p>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <h5 class="mb-3">Behind the Scenes of a Full-Day Wedding Shoo</h5>
+                  <p class="text-200 m-0 mb-3">By - <span class="text-300 fw-bold">By Sumit Singh</span></p>
+                  <p class="mb-3">From getting-ready shots to the last dance — a look at how we plan and shoot a wedding from start to finish.</p>
+                  <button class="btn btn-link text-warning p-0"><span class="fw-medium">Read full article</span><img class="ms-3" src="assets/img/icons/long-arrow.png" alt="" /></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex">
+              <div class="card border-0 mb-3"><img class="card-img-top" src="assets/img/blogs/img3.png" alt="" />
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center"> <span class="fa-solid fa-circle-dot text-warning"></span>
+                    <p class="text-300 m-0 ps-1">6min read</p>
+                  </div>
+                  <div class="bg-warning p-2 text-center opacity-50">
+                    <p class="text-white mb-0">color and light</p>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <h5 class="mb-3">Why We Never Over-Edit Our Photos</h5>
+                  <p class="text-200 m-0 mb-3">By - <span class="text-300 fw-bold">By Sumit Singh</span></p>
+                  <p class="mb-3">Good editing enhances a photo. Great editing is invisible. Here's our philosophy on keeping it real.</p>
+                  <button class="btn btn-link text-warning p-0"><span class="fw-medium">Read full article</span><img class="ms-3" src="assets/img/icons/long-arrow.png" alt="" /></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="d-flex align-items-center justify-content-center mt-3">
+              <button class="btn btn-link d-inline-block text-warning p-0 fs-1"><span class="fw-bold">See all</span></button>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="py-4" id="contact">
+
+        <div class="container px-md-5">
+          <div class="row align-items-center">
+            <div class="my-4 text-center">
+              <h1 class="text-uppercase fs-lg-8 fs-6 fw-bolder text-300 lh-1 position-relative z-index-0">Contact</h1>
+              <h1 class="fw-bolder text-outlined fs-7 text-white lh-1 mt-n4 position-relative z-index--1">Get in Touch</h1>
+              <form class="my-5 px-3">
+                <div class="row g-3 g-md-5">
+                  <div class="col-md-6">
+                    <div class="card border-0">
+                      <div class="form-floating mb-3">
+                        <input class="form-control form-postpixle-header-control" id="floatingEmail" name="email" type="email" placeholder="name@example.com" required="required" />
+                        <label for="floatingEmail">Email</label>
                       </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="row align-items-center">
-                        <div class="col-xl-7">
-                          <div class="position-relative">
-                            <div class="position-absolute start-0 bottom-0 ms-3">
-                              <h3 class="text-white">Mogadisu Somalia</h3>
-                              <p class="text-300">Shooting and Advertisement Campaign</p>
-                            </div><img class="portfolio-img img-fluid" src="assets/img/portfolio/img02.png" alt="" />
-                          </div>
-                        </div>
-                        <div class="col-xl-4 mt-4">
-                          <ul class="fs-0" style="text-align: justify;">
-                            <li>Real Weddings, Real Moments</li>
-                            <li>Wedding Coverage · Full Day</li>
-                            <li>Unscripted moments from real celebrations — the laughter, the tears, and everything in between.</li>
-                          </ul>
-                        </div>
+                      <div class="form-floating mb-3">
+                        <input class="form-control form-postpixle-header-control" id="floatingName" name="name" type="text" placeholder="name" / required="required">
+                        <label for="floatingName">Your name</label>
                       </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="row align-items-center">
-                        <div class="col-xl-7">
-                          <div class="position-relative">
-                            <div class="position-absolute start-0 bottom-0 ms-3">
-                              <h3 class="text-white">Mogadisu Somalia</h3>
-                              <p class="text-300">Shooting and Advertisement Campaign</p>
-                            </div><img class="portfolio-img img-fluid" src="assets/img/portfolio/img03.png" alt="" />
-                          </div>
-                        </div>
-                        <div class="col-xl-4 mt-4">
-                          <ul class="fs-0" style="text-align: justify;">
-                            <li>Brand & Product Shoots</li>
-                            <li>Commercial · Studio</li>
-                            <li>Clean, detail-focused photography built to make products and brands stand out online and in print.</li>
-                          </ul>
-                        </div>
+                      <div class="form-floating mb-3">
+                        <input class="form-control form-postpixle-header-control" id="floatingPhone" name="phone" type="tel" placeholder="Phone number" />
+                        <label for="floatingPhone">Phone number</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input class="form-control form-postpixle-header-control" id="floatingLocation" name="location" type="text" placeholder="Desired Location" />
+                        <label for="floatingLocation">Desired location</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input class="form-control form-postpixle-header-control text-400" id="floatingDate" name="date" type="text" placeholder="Desired Date" />
+                        <label for="floatingDate">Desired Date</label>
                       </div>
                     </div>
                   </div>
+                  <div class="col-md-6">
+                    <div class="card border-0">
+                      <input class="form-control opacity-0 pb-0 pe-none d-none d-md-block" />
+                      <div class="form-floating mb-3">
+                        <textarea class="form-control form-postpixle-header-control border ps-2 form-postpixle-header-control" id="floatingTextarea" name="message" style="height: 210px" placeholder="Leave a comment here"></textarea>
+                        <label class="ps-2" for="floatingTextarea">Message</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input class="form-control form-postpixle-header-control" id="floatingSource" name="source" type="text" placeholder="How did you hear about us?" />
+                        <label for="floatingSource">How did you hear about us?</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 text-end mt-3">
+                    <button class="btn btn-link text-warning p-0" type="submit"><span class="fw-bolder text-uppercase">Submit</span><img class="ms-3" src="assets/img/icons/long-arrow.png" alt="" /></button>
+                  </div>
                 </div>
-                <div class="swiper-theme swiper-pagination d-flex mt-4"></div>
-              </div>
+              </form>
             </div>
           </div>
         </div><!-- end of .container-->

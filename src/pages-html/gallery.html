@@ -35,6 +35,15 @@
     <link href="assets/css/user.css" rel="stylesheet" />
 
     <link href="vendors/glightbox/glightbox.min.css" rel="stylesheet">
+
+    <script>
+    try {
+      var t = localStorage.getItem('theme') ||
+      (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+    </script>
+    
   </head>
 
 
@@ -82,6 +91,9 @@
                   <h1 class="ms-2 fw-bolder text-outlined text-uppercase text-white pe-none display-1">Gallery</h1>
                 </div>
                 <div class="d-flex gap-3 align-items-start"><a class="mb-0 ms-auto text-warning fs-0 fw-bold text-uppercase" href="blog.html#contact">Contact Now</a>
+                  <button id="themeToggle" class="btn btn-link p-0 text-warning" type="button" aria-label="Switch to dark mode">
+                    <span class="fas fa-moon"></span>
+                  </button>
                   <ul class="navbar-nav navbar-postpixle ms-auto text-end">
                     <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="index.html">Home</a></li>
                     <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="portfolio.html">Portfolio</a></li>

@@ -4,6 +4,7 @@ import swiperInit from './swiper';
 import isotopeInit from './isotope';
 import glightboxInit from './glightbox';
 import cursorInit from './cursor';
+import themeToggleInit from './theme-toggle';
 
 /* -------------------------------------------------------------------------- */
 /*                            Theme Initialization                            */
@@ -13,3 +14,4 @@ docReady(swiperInit);
 docReady(glightboxInit);
 docReady(isotopeInit);
 docReady(cursorInit);
+docReady(themeToggleInit);

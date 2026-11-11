@@ -13,3 +13,13 @@
 // user.scss
 //
 // Place your own theme CSS or SCSS rules below this line, these rules will override any Bootstrap and theme variables.
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  body { background: #121212; color: #cfd8dc; }
+  h1, h2, h3, h4, h5, h6 { color: #f1f1f1; }
+  .bg-white, .navbar { background-color: #121212 !important; }
+  .navbar .nav-link, .navbar-brand { color: #e6e6e6 !important; }
+  .nav-text-outlined, .text-outlined { -webkit-text-stroke-color: #fff; }
+  .form-control { background: #1e1e1e; color: #eee; border-color: #444; }
+}
